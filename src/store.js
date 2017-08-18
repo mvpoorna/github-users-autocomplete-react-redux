@@ -6,6 +6,9 @@ import freeze from "redux-freeze";
 import { reducers } from "./reducers/index";
 import { sagas } from "./sagas/index";
 
+import thunk from "redux-thunk"
+import promise from "redux-promise-middleware"
+
 // add the middlewares
 let middlewares = [];
 
@@ -20,6 +23,10 @@ middlewares.push(sagaMiddleware);
 if (process.env.NODE_ENV !== 'production') {
   middlewares.push(freeze);
 }
+
+middlewares.push(thunk)
+
+middlewares.push(promise())
 
 // apply the middleware
 let middleware = applyMiddleware(...middlewares);
