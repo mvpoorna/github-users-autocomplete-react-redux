@@ -28,7 +28,7 @@ export default class GithubUsers {
     console.log("getUsers",request)
     //const url = 'https://api.github.com/search/users/'+request
     const url = 'https://api.github.com/search/users'
-    const params = {username:"Machkeck",token:"6380f0c2914509bfd9c4075e9a24b7e434a673d8",q:request}
+    const params = {username:"Machkeck",access_token:"6380f0c2914509bfd9c4075e9a24b7e434a673d8",q:request+"in:login",type:"Users"}
     return axios.get(url,{params:params})/*.then(response => {
       console.log("Axios response: ",response.data.items)
       return response.data.items.json()
