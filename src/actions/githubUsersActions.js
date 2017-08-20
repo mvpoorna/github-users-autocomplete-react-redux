@@ -1,7 +1,10 @@
 import GithubUsers from '../api/githubUsers'
 
+//ACTIONS
+
 export function getUsers(request) {
-  if (request != "") {
+  //check if request isn't empty or null else return users as empty array
+  if (request != "" && request != null) {
     return dispatch => {
 
       let wiki_request = "https://en.wikipedia.org/w/api.php?action=query&titles=" + request + "&prop=pageimages&format=json&pithumbsize=100"
@@ -14,7 +17,8 @@ export function getUsers(request) {
           }
         })
       }).catch(error => {
-        console.log("EERRR", error.response)
+        //common error: 403 - Too many API requests
+        console.log("ERROR", error.response)
         dispatch({
           type: "GET_GIT_USERS",
           payload: {
@@ -24,13 +28,14 @@ export function getUsers(request) {
         //throw(error)
       })
     }
-  }
-  return dispatch => {
-    dispatch({
-      type: "GET_GIT_USERS",
-      payload: {
-        users: []
-      }
-    })
+  } else {
+    return dispatch => {
+      dispatch({
+        type: "GET_GIT_USERS",
+        payload: {
+          users: []
+        }
+      })
+    }
   }
 }

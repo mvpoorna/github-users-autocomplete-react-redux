@@ -1,3 +1,5 @@
+//REDUCER
+
 const githubUsersThunkReducer = (state = {
   users: []
 }, action) => {
