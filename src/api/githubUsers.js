@@ -2,6 +2,8 @@ import axios from 'axios'
 
 
 //class containing one static function for getting data from the github API
+
+//Change Username and Token for authentication. Github deletes tokens in public repos.
 export default class GithubUsers {
 
   static getUsers(request) {
