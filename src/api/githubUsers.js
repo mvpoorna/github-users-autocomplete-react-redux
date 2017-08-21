@@ -8,7 +8,7 @@ export default class GithubUsers {
     const url = 'https://api.github.com/search/users'
     const params = {
       username: "Machkeck",
-      access_token: "6380f0c2914509bfd9c4075e9a24b7e434a673d8",
+      access_token: "e833d815782b033da5a48198c1e084a1cc935550",
       q: request + "in:login",
       type: "Users"
     }
