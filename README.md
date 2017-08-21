@@ -10,4 +10,4 @@ technical assignment
 3. If	you	had	a	full	day	more	to	work	on	this,	what	would	you	improve?
   I would probably have designed a cleaner look of the application and improved the highlighting mechanism. 
 4. If	you	would	start	from	scratch	now,	what	would	you	do	differently?
-  I would have started out with using redux-thunk rather then messing around with redux-saga which I am not that familiar with. This would have saved me a lot of time and I wouldn't have to do that many adjustments in the folder structure.
+  I would have chosen to use redux-thunk from the start rather than mess around with redux-saga which I am not that familiar with. This would have saved me a lot of time and I wouldn't have to do that many adjustments in the folder structure.
