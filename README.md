@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Redux minimal starter kit (boilerplate)
 
 
@@ -152,3 +153,7 @@ Besides the `start` script, there are also other scripts
 # License
 
 This project is licensed under the MIT license, Copyright (c) 2016 Catalin Luntraru.
+=======
+# Github-users-autocomplete-search
+technical assignment
+>>>>>>> 11fdd0ab4db8ff5d85a6cc4c05e763eccfab15f8
