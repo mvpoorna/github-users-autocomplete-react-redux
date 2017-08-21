@@ -3,6 +3,15 @@
 # Github-users-autocomplete-search
 technical assignment
 
+# Instructions
+1. clone repo
+2. npm install
+3. adjust username and token fields in src/api/githubUser.js
+4. npm start
+5. go to localhost:8080 
+
+# Questions
+
 1. What	do	you	like	about	your	solution?
   I think that my solution meets most of the requirements and that the code is kept simple. 
 2. What	do	you	dislike	about	your	solution?
