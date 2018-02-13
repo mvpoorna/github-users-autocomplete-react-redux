@@ -9,8 +9,8 @@ export default class GithubUsers {
   static getUsers(request) {
     const url = 'https://api.github.com/search/users'
     const params = {
-      username: "Machkeck",
-      access_token: "e833d815782b033da5a48198c1e084a1cc935550",
+      username: "mvpoorna",
+      access_token: "7dddf08ca9f386baf6f1c4bd00e0d98ada849680",
       q: request + "in:login",
       type: "Users"
     }
